@@ -1,7 +1,7 @@
 {
   "name": "uncurrify",
   "version": "1.0.0",
-  "description": "uncurry function that was carried before",
+  "description": "uncurry function that was curried before",
   "homepage": "https://github.com/coderaiser/uncurrify",
   "authors": [
     "coderaiser <mnemonic.enemy@gmail.com>"
