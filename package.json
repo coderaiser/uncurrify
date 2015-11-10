@@ -1,0 +1,43 @@
+{
+  "name": "uncurrify",
+  "version": "1.0.0",
+  "description": "uncurry function that was carried before",
+  "main": "lib/uncurrify.js",
+  "scripts": {
+    "test": "tape test/*.js",
+    "build": "npm-run-all clean 6to5 bundle bundle:es6 minify",
+    "minify": "minify dist/uncurrify.js > dist/uncurrify.min.js",
+    "6to5": "babel -d lib src",
+    "wisdom": "npm run build",
+    "jscs-fix": "jscs --esnext test src --fix",
+    "clean": "rimraf lib/* dist/*",
+    "bundle:base": "browserify -s uncurrify --ng false",
+    "bundle": "npm run bundle:base -- -r ./lib/uncurrify.js:uncurrify ./lib/uncurrify.js -o dist/uncurrify.js",
+    "bundle:es6:base": "npm run bundle:base -- -r ./src/uncurrify.js:uncurrify ./src/uncurrify.js",
+    "bundle:es6": "npm run bundle:es6:base -- -o dist/uncurrify.es6.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coderaiser/uncurrify.git"
+  },
+  "keywords": [
+    "curry",
+    "uncurry",
+    "functional"
+  ],
+  "author": "coderaiser <mnemonic.enemy@gmail.com> (http://coderaiser.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coderaiser/uncurrify/issues"
+  },
+  "homepage": "https://github.com/coderaiser/uncurrify",
+  "devDependencies": {
+    "babel-cli": "^6.1.1",
+    "babel-preset-es2015": "^6.0.15",
+    "browserify": "^12.0.1",
+    "jscs": "^2.4.0",
+    "npm-run-all": "^1.2.12",
+    "rimraf": "^2.4.3",
+    "tape": "^4.2.0"
+  }
+}

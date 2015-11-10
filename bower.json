@@ -1,0 +1,27 @@
+{
+  "name": "uncurrify",
+  "version": "1.0.0",
+  "description": "uncurry function that was carried before",
+  "homepage": "https://github.com/coderaiser/uncurrify",
+  "authors": [
+    "coderaiser <mnemonic.enemy@gmail.com>"
+  ],
+  "main": "lib/uncurrify.js",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "curry",
+    "uncurry",
+    "functional"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
