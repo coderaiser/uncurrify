@@ -3,6 +3,7 @@ node_js:
     - 5
 
 script:
+  - npm run lint
   - npm test
 
 notifications:
