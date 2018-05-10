@@ -28,9 +28,9 @@ MIT
 
 [NPMIMGURL]:                https://img.shields.io/npm/v/uncurrify.svg?style=flat
 [BuildStatusIMGURL]:        https://img.shields.io/travis/coderaiser/uncurrify/master.svg?style=flat
-[DependencyStatusIMGURL]:   https://img.shields.io/gemnasium/coderaiser/uncurrify.svg?style=flat
+[DependencyStatusIMGURL]:   https://img.shields.io/david/coderaiser/uncurrify.svg?style=flat
 [LicenseIMGURL]:            https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
 [NPMURL]:                   https://npmjs.org/package/uncurrify "npm"
 [BuildStatusURL]:           https://travis-ci.org/coderaiser/uncurrify  "Build Status"
-[DependencyStatusURL]:      https://gemnasium.com/coderaiser/uncurrify "Dependency Status"
+[DependencyStatusURL]:      https://david-dm.org/coderaiser/uncurrify "Dependency Status"
 [LicenseURL]:               https://tldrlegal.com/license/mit-license "MIT License"
