@@ -1,3 +1,9 @@
+2020.10.24, v2.0.1
+
+fix:
+- (npmignore) add dot files
+
+
 2020.10.24, v2.0.0
 
 feature:

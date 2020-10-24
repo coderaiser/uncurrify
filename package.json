@@ -1,6 +1,6 @@
 {
   "name": "uncurrify",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "uncurry function that was curried before",
   "main": "lib/uncurrify.js",
   "scripts": {
