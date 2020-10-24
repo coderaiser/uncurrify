@@ -1,3 +1,9 @@
+2020.10.24, v2.0.2
+
+fix:
+- (package) engines: node v8
+
+
 2020.10.24, v2.0.1
 
 fix:
