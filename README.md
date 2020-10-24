@@ -11,11 +11,11 @@ npm i uncurrify --save
 ## How to use?
 
 ```js
-let uncurrify = require('ununcurrify');
+const uncurrify = require('ununcurrify');
 
-let g = x => y => sum(x + y);
-let f = x => g(x);
-let sum = (x, y) => x + y;
+const g = (x) => (y) => sum(x + y);
+const f = (x) => g(x);
+const sum = (x, y) => x + y;
 
 ununcurrify(f)(2, 2);
 // returns
