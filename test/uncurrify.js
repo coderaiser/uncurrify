@@ -1,7 +1,9 @@
 'use strict';
 
-const uncurrify = require('..');
 const test = require('supertape');
+const tryCatch = require('try-catch');
+
+const uncurrify = require('..');
 
 const f = (x) => (y) => sum(x, y);
 const sum = (x, y) => x + y;
@@ -21,14 +23,16 @@ test('should call function', (t) => {
 });
 
 test('no arguments', (t) => {
-    t.throws(uncurrify, /fn should be function!/, 'should throw when no fn');
+    const [error] = tryCatch(uncurrify);
+    
+    t.equal(error.message, 'fn should be function!', 'shoud throw when wrong type');
     t.end();
 });
 
 test('arguments: wrong type', (t) => {
-    const fn = () => uncurrify(1);
+    const [error] = tryCatch(uncurrify, 1);
     
-    t.throws(fn, /fn should be function/, 'shoud throw when wrong type');
+    t.equal(error.message, 'fn should be function!', 'shoud throw when wrong type');
     t.end();
 });
 
