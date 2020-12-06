@@ -11,7 +11,7 @@ npm i uncurrify --save
 ## How to use?
 
 ```js
-const uncurrify = require('ununcurrify');
+const uncurrify = require('uncurrify');
 
 const g = (x) => (y) => sum(x + y);
 const f = (x) => g(x);
